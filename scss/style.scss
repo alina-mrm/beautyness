@@ -58,27 +58,134 @@ body {
 .header__container {
     padding-top: 5px;
     padding-bottom: 5px;
+    max-width: 1410px;
     width: 100%;
     min-height: 105px;
     display: flex;
+    justify-content: center;
 }
 
 .header__menu {
     display: flex;
     align-items: center;
+
+}
+
+.menu__logo {
+    display: flex;
+    align-items: center;
+    margin: 0px 66px 0px 0px;
+
+    .logo__image {
+        margin: 0px 14px 0px 0px;
+    }
 }
 
 .menu__list {
     display: flex;
+    flex-wrap: nowrap;
 }
 
 .menu__icon-list {
     display: flex;
 }
 
+.menu__phone {
+    position: relative;
+    min-height: 24px;
+    max-width: 212px;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0px 212px 0px 0px;
+
+    a {
+        color: #141414;
+    }
+}
+
+.menu__phone:hover {
+    color: #5C8692;
+    box-shadow: 0 1px 0 #5C8692;
+    transition: all .7s ease-out;
+    
+}
+
+.menu__phone::before {
+    content: "";
+    position: absolute;
+    background-image: url(/img/other-icons/phone-2.svg);
+    top: 0;
+    left: -36px;
+    background-repeat: no-repeat;
+    background-size: 24px 25px;
+    width: 24px;
+    height: 25px;
+}
+
+.menu__list {
+    margin: 0px 30px 0px 0px;
+}
+
+.menu__item:not(:last-child){
+    margin: 0px 38px 0px 0px;
+}
+
+.menu__item:nth-child(3) {
+    margin: 0px 50px 0px 0px;
+}
+
+.menu__link:hover {
+    color: #5C8692;
+    transition: all .7 ease-out;
+}
+
+
+.menu__icon-list {
+    margin: 0px 30px 0px 0px; 
+}
+
+.menu__icon:hover {
+    transform: scale(1.2);
+    transition: all .7 ease;
+}
+
+
+
+.menu__icon:not(:last-child) {
+    margin: 0px 20px 0px 0px;
+}
+
 .header-button {
     @extend %buttons-style;
+    width: 100%; //чтобы кнопка не пряталась за экран
+    max-width: 201px;
+    min-height: 59px;
+    background-color: #5C8692;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 19px 41px 19px 58px;
 }
+
+.header-button::before {
+    content: "";
+    position: absolute;
+    background-image: url(/img/other-icons/reserv.svg);
+    left: 15%;
+    right: 86.98%;
+    top: calc(50% - 18px/2 + 0.5px);
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    width: 18px;
+    height: 18px;
+}
+
+.header-button:hover {
+    background-color: #9fc3cc;
+    transition: all .7s ease;
+}
+
+
+
 
 /*----------------------------КОД ПО АДАПТИРОВАНИЮ----------------------------*/
 
@@ -252,5 +359,3 @@ body {
         margin: 80px 38px 0px 0px;
     }
 }
-
-
