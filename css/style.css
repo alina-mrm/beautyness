@@ -99,6 +99,23 @@ a:-webkit-any-link {
   color: #141414;
 }
 
+.welcome__title {
+  font-family: 'Playfair Display';
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 130%;
+  letter-spacing: 0.45px;
+  color: #141414;
+}
+
+.welcome__message, .welcome__description {
+  font-family: 'Manrope';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #555555;
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -125,7 +142,7 @@ body {
 }
 
 [class*="__container"] {
-  max-width: 1200px;
+  max-width: 1230px;
   margin: 0px auto;
   padding: 0px 15px;
 }
@@ -296,24 +313,54 @@ body {
   transition: all .7s ease;
 }
 
+/*-----------------------BLOCK MAIN-----------------------------*/
 .page__welcome {
   width: 100%;
   min-height: 885px;
   background-color: #EBF3F5;
 }
 
-.welcome__container {
+.welcome__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 170px;
+}
+
+.welcome__text {
+  margin-top: 49px;
+}
+
+.welcome__message {
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #5C8692;
+}
+
+.welcome__title {
+  font-size: 55px;
+  line-height: 130%;
+  min-height: 215px;
+  max-width: 396px;
+  width: 100%;
+}
+
+.welcome__description {
+  font-size: 19px;
+  min-height: 92px;
+  max-width: 483px;
+  width: 100%;
 }
 
 .welcome__image {
-  max-width: 550px;
+  width: 50%;
 }
 
 .welcome__image img {
-  width: 100%;
+  width: 550px;
+  height: 545px;
   -o-object-fit: cover;
      object-fit: cover;
 }
