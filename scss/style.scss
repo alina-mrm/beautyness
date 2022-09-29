@@ -406,14 +406,14 @@ body {
     border: 2px solid #1E2C30;
     padding: 18px 52px;
     text-align: center;
-    
+    gap: 12px;
     
 }
 
-.benefits__block:not(:last-child) {
+/*.benefits__block:not(:last-child) {
     margin-right: 12px;
     margin-bottom: 12px;
-}
+}*/
 
 .benefits__image {
     
