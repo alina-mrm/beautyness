@@ -160,6 +160,10 @@ body {
     margin: 0px 20px 0px 0px;
 }
 
+.button {
+    @extend %buttons-style;
+}
+
 .header-button {
     @extend %buttons-style;
     width: 100%; //чтобы кнопка не пряталась за экран
@@ -207,15 +211,33 @@ body {
 }
 .welcome__text {
     margin-top: 49px;
+    margin-right: 95px;
 }
 .welcome__message {
     @extend %description-fonts;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 5px;
     font-size: 15px;
     line-height: 150%;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: #5C8692;
 }
+.welcome__message::before {
+    content: "";
+    position: absolute;
+    background-image: url(/img/other-icons/warning.svg);
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: 22px 21px;
+    width: 22px;
+    height: 21px;
+
+}
+    
+
 .welcome__title {
     @extend %title-fonts;
     font-size: 55px;
@@ -223,7 +245,9 @@ body {
 
     min-height: 215px;
     max-width: 396px;
-    width: 100%
+    width: 100%;
+    margin-bottom: 19px;
+    
 }
 .welcome__description {
     @extend %description-fonts;
@@ -232,21 +256,89 @@ body {
     min-height: 92px;
     max-width: 483px;
     width: 100%;
+    margin-bottom: 26px;
+}
+
+.welcome-button {
+    @extend %buttons-style;
+    width: 100%; //чтобы кнопка не пряталась за экран
+    max-width: 238px;
+    min-height: 57px;
+    background-color: #5C8692;
+    font-size: 13px;
+    color: #FFFFFF;
+    padding: 18px 32px 19px 32px;
+    
+}
+.welcome-button:hover {
+    background-color: #9fc3cc;
+    transition: all .7s ease;
+}
+
+.welcome__image {
+    position: relative;
+    max-width: 550px;
+    max-height: 545px;
+    
+    
+    img {
+        position: relative;
+        z-index: 20;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+}
+
+.rect__rect {
+    position: absolute;
+    top: -10%;
+    left: 5%;
+    border: 10px solid #5C8692;
+    height: 645px;
+    width: 592px;
+    z-index: 1;
+}
+
+.page__services {
+    width: 100%;
+    min-height: 730px;
+    background-color: #FFFFFF;
+}
+
+.services__container {
+}
+.services__block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.services__card {
+    position: relative;
+    max-width: 380px;
+    max-height: 288px;
+
+    img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+}
+
+.services__image {
+
+}
+
+.services__title {
+}
+.services_text {
 }
 .button {
 }
-.welcome-button {
-}
-.welcome__image {
-
-    width: 50%;
-    
-
-    img {
-        width: 550px;
-        height: 545px;
-        object-fit: cover;
-    }
+.services-button {
 }
 
 
