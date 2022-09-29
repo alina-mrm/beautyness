@@ -283,7 +283,6 @@ body {
     
     img {
         position: relative;
-        z-index: 20;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -298,7 +297,6 @@ body {
     border: 10px solid #5C8692;
     height: 645px;
     width: 592px;
-    z-index: 1;
 }
 
 .page__services {
@@ -311,34 +309,160 @@ body {
 }
 .services__block {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 100px;
 }
 .services__card {
     position: relative;
     max-width: 380px;
+    min-height: 530px;
+
+    :not(:last-child) {
+        padding-right: 30px;
+    }
+    
+}
+
+.services__image {
+    position: relative;
+    max-width: 380px;
     max-height: 288px;
+}
+
+.services__image img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.services__title {
+    @extend %title-fonts;
+    font-size: 26px;
+    line-height: calc(36.4/26*100%);
+    margin-top: 16px;
+    letter-spacing: 0.31px;
+
+}
+.services_text {
+    @extend %description-fonts;
+    line-height: calc(30.6/18*100%);
+    margin-top: 13px;
+    margin-bottom: 17px;
+}
+
+.services-button {
+    @extend %buttons-style;
+    padding: 18px 32px 19px 32px;
+}
+
+.page__take-care {
+    width: 100%;
+    min-height: 836px;
+    background-color: #EBF3F5;
+}
+.take-care {
+}
+.take-care___container {
+}
+.take-care__block {
+    display: flex;
+    padding-top: 140px;
+}
+.take-care__content {
+    max-width: 593px;
+    margin-right: 83px;
+
+}
+.take-care__message {
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #5C8692;
+
+    margin-bottom: 4px;
+
+}
+.take-care__title {
+    @extend %title-fonts;
+    margin-bottom: 14px;
+
+}
+.take-care__description {
+    @extend %description-fonts;
+    line-height: 170%;
+}
+.take-care__benefits {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 61px;
+}
+.benefits {
+}
+.benefits__block {
+    background: #FFFFFF;
+    border: 2px solid #1E2C30;
+    padding: 18px 52px;
+    text-align: center;
+    
+    
+}
+
+.benefits__block:not(:last-child) {
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+.benefits__image {
+    
+
+    
+}
+.benefits__title {
+    max-width: 78px;
+    text-align: center;
+
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 0.264px;
+    color: #141414;
+}
+.take-care__pictures {
+    position: relative;
+    max-width: 500px;
+    max-height: 576px;
+    z-index: 10;
 
     img {
         position: relative;
         width: 100%;
         height: 100%;
         object-fit: cover;
-        
+        filter: drop-shadow(1px 0px 18px rgba(0, 0, 0, 0.2));
+        z-index: 10;
     }
 }
 
-.services__image {
-
+.take-care__substrate {
+    position: absolute;
+    background-image: url(/img/care/substrate.jpg);
+    left: 7.04%;
+    right: -7.04%;
+    top: -34.88px;
+    background-repeat: no-repeat;
+    background-size: 500px 576px;
+    width: 500px;
+    height: 576px;
+    z-index: 1;
 }
 
-.services__title {
+.take-care__photo {
 }
-.services_text {
-}
-.button {
-}
-.services-button {
+.take-care__substrate {
 }
 
 
@@ -488,4 +612,12 @@ body {
         transform: translate(-50%, 0%) rotate(-45deg); 
     }
 
+}
+
+@media (max-width: 1060px) {
+    .take-care__pictures {
+        display: none;
+    }
+
+    
 }
