@@ -99,7 +99,7 @@ a:-webkit-any-link {
   color: #141414;
 }
 
-.welcome__title, .services__title, .take-care__title {
+.welcome__title, .services__title, .take-care__title, .price__title {
   font-family: 'Playfair Display';
   font-weight: 400;
   font-size: 45px;
@@ -400,6 +400,7 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: 10;
 }
 
 .rect__rect {
@@ -409,6 +410,7 @@ body {
   border: 10px solid #5C8692;
   height: 645px;
   width: 592px;
+  z-index: 1;
 }
 
 .page__services {
@@ -467,6 +469,13 @@ body {
   padding: 18px 32px 19px 32px;
 }
 
+.services-button:hover {
+  background-color: #5C8692;
+  color: #FFFFFF;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
 .page__take-care {
   width: 100%;
   min-height: 836px;
@@ -509,6 +518,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 61px;
+  gap: 12px;
 }
 
 .benefits__block {
@@ -519,10 +529,6 @@ body {
   gap: 12px;
 }
 
-/*.benefits__block:not(:last-child) {
-    margin-right: 12px;
-    margin-bottom: 12px;
-}*/
 .benefits__title {
   max-width: 78px;
   text-align: center;
@@ -563,6 +569,106 @@ body {
   width: 500px;
   height: 576px;
   z-index: 1;
+}
+
+/*---------------------------------ЦЕНЫ--------------------------------------------*/
+.page__price {
+  width: 100%;
+  min-height: 1733px;
+  background-color: #ffffff;
+}
+
+.price__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 99px;
+}
+
+.price__message {
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #5C8692;
+  margin-bottom: 4px;
+}
+
+.price__title {
+  max-width: 580px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.price__all {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (2fr)[2];
+  -ms-grid-columns: (2fr)[2];
+      grid-template: repeat(2, 2fr)/repeat(2, 2fr);
+}
+
+.all-price__image-1 {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  max-width: 600px;
+  min-height: 650px;
+  position: relative;
+}
+
+.all-price__image-1 img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.block-price--1 {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  padding: 61px 0px 143px 60px;
+}
+
+.block-price--2 {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.block-price__product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.all-price__image-2 {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  max-width: 600px;
+  min-height: 650px;
+  position: relative;
+}
+
+.all-price__image-2 img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*----------------------------КОД ПО АДАПТИРОВАНИЮ----------------------------*/
