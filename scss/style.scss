@@ -517,9 +517,14 @@ body {
 .block-price--1 {
     order: 2;
     padding: 61px 0px 143px 60px;
+    position: relative;
+
+    
 }
 .block-price--2 {
     order: 3;
+    padding: 141px 60px 36px 0px;
+    position: relative;
 }
 
 .block-price__line {
@@ -527,18 +532,75 @@ body {
 .block-price__product {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    text-align: center;
+
+    ::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        left: 0%;
+        right: 0%;
+        top: 83px;
+        background: #134134;
+    }
+
+    ::after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        left: 0%;
+        right: 0%;
+        top: 29.92px;
+        background: #141414;
+    }
 }
 .block-price__title {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 0.264px;
+    text-transform: capitalize;
+    color: #141414;
 }
+
+
 .block-price__cost {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 157%;
+    color: #141414;
+
 }
 .block-price__from {
+    font-size: 18px;
+    line-height: 150%;
+    color: #555555;
+    margin-right: 10px;
+    margin-top: 2px;
 }
+
+
 .block-price__description {
+    @extend %description-fonts;
+    margin-top: 12px;
+    margin-bottom: 29px;
+    position: relative;
 }
-.button {
-}
+
+
 .block-price--button {
+    @extend %buttons-style;
+    padding: 18px 32px 19px 32px;
+
+    &:hover {
+        background-color: #5C8692;
+        color: #FFFFFF;
+        transition: all .7s ease;
+    }
+
 }
 .all-price__image-2 {
     order: 4;
@@ -553,6 +615,20 @@ body {
         object-fit: cover;
     }
 }
+
+.block-price__square-1 {
+    position: absolute;
+    height: 90px;
+    left: 0;
+    top: 86.7%;
+}
+.block-price__square-2 {
+    position: absolute;
+    height: 90px;
+    left: 85%;
+    top: 0;
+}
+
 
 
 /*----------------------------КОД ПО АДАПТИРОВАНИЮ----------------------------*/
@@ -699,6 +775,15 @@ body {
         transform: translate(-50%, 0%) rotate(-45deg); 
     }
 
+}
+
+@media (max-width: 1222px) {
+    .block-price__square-1  {
+        display: none;
+    }
+    .block-price__square-2 {
+        display: none;
+    }
 }
 
 @media (max-width: 1060px) {
