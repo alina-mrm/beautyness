@@ -99,7 +99,7 @@ a:-webkit-any-link {
   color: #141414;
 }
 
-.welcome__title, .services__title, .take-care__title, .price__title {
+.welcome__title, .services__title, .take-care__title, .price__title, .testimonials__title, .content-testimonials__names {
   font-family: 'Playfair Display';
   font-weight: 400;
   font-size: 45px;
@@ -665,7 +665,7 @@ body {
   height: 1px;
   left: 0%;
   right: 0%;
-  top: 83px;
+  top: 265%;
   background: #134134;
 }
 
@@ -675,7 +675,7 @@ body {
   height: 3px;
   left: 0%;
   right: 0%;
-  top: 29.92px;
+  top: 100%;
   background: #141414;
 }
 
@@ -713,6 +713,7 @@ body {
 
 .block-price--button {
   padding: 18px 32px 19px 32px;
+  margin-top: 9px;
 }
 
 .block-price--button:hover {
@@ -743,7 +744,7 @@ body {
   position: absolute;
   height: 90px;
   left: 0;
-  top: 86.7%;
+  top: 86.9%;
 }
 
 .block-price__square-2 {
@@ -751,6 +752,118 @@ body {
   height: 90px;
   left: 85%;
   top: 0;
+}
+
+.page__testimonials {
+  width: 100%;
+  min-height: 655px;
+  background-color: #EBF3F5;
+}
+
+.testimonials__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 99px;
+}
+
+.testimonials__message {
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #5C8692;
+  padding-bottom: 4px;
+}
+
+.testimonials__title {
+  margin-bottom: 40px;
+}
+
+.testimonials__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.content-testimonials__first-block {
+  max-width: 600px;
+  min-height: 311px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60.5%, #FFFFFF), color-stop(39.5%, #1E2C30));
+  background: linear-gradient(to bottom, #FFFFFF 60.5%, #1E2C30 39.5%);
+}
+
+.content-testimonials__second-block {
+  max-width: 576px;
+  min-height: 311px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60.5%, #FFFFFF), color-stop(39.5%, #1E2C30));
+  background: linear-gradient(to bottom, #FFFFFF 60.5%, #1E2C30 39.5%);
+}
+
+.content-testimonials__text {
+  padding: 33px 47px 25px 30px;
+  font-size: 19px;
+  line-height: 170%;
+  color: #141414;
+}
+
+.content-testimonials__about-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 22px 0px 0px 30px;
+}
+
+.content-testimonials__person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-testimonials__photo {
+  margin-right: 20px;
+}
+
+.content-testimonials__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content-testimonials__names {
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.24px;
+  color: #FFFFFF;
+}
+
+.content-testimonials__country {
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.42px;
+  color: #FFFFFF;
+}
+
+.content-testimonials__marker {
+  padding-right: 30px;
 }
 
 /*----------------------------КОД ПО АДАПТИРОВАНИЮ----------------------------*/
@@ -908,8 +1021,53 @@ body {
   }
 }
 
+@media (max-width: 1150px) {
+  .all-price__image-1 {
+    display: none;
+  }
+  .all-price__image-2 {
+    display: none;
+  }
+  .block-price--1 {
+    padding: 0px 0px 40px 0px;
+    margin: auto;
+  }
+  .block-price--2 {
+    padding: 0px 0px 0px 0px;
+    margin: auto;
+  }
+  .price__all {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[2];
+    -ms-grid-columns: (1fr)[1];
+        grid-template: repeat(2, 1fr)/repeat(1, 1fr);
+  }
+  .block-price__product ::before {
+    top: 270%;
+  }
+}
+
+@media (max-width: 1069px) {
+  .content-testimonials {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media (max-width: 1060px) {
   .take-care__pictures {
     display: none;
+  }
+}
+
+@media (max-width: 529px) {
+  .block-price__line {
+    padding-bottom: 10px;
+  }
+  .block-price__product ::before {
+    top: 320%;
   }
 }
