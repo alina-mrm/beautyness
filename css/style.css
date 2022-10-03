@@ -99,7 +99,7 @@ a:-webkit-any-link {
   color: #141414;
 }
 
-.welcome__title, .services__title, .take-care__title, .price__title, .testimonials__title, .content-testimonials__names {
+.welcome__title, .services__title, .take-care__title, .price__title, .testimonials__title, .content-testimonials__names, .our-benefits__main-title, .our-benefits__title {
   font-family: 'Playfair Display';
   font-weight: 400;
   font-size: 45px;
@@ -108,7 +108,7 @@ a:-webkit-any-link {
   color: #141414;
 }
 
-.welcome__message, .welcome__description, .services_text, .take-care__description, .block-price__description {
+.welcome__message, .welcome__description, .services_text, .take-care__description, .block-price__description, .our-benefits__description {
   font-family: 'Manrope';
   font-weight: 400;
   font-size: 18px;
@@ -785,6 +785,7 @@ body {
 
 .testimonials__title {
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .testimonials__content {
@@ -822,7 +823,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 22px 0px 0px 30px;
+  padding: 22px 0px 22px 30px;
 }
 
 .content-testimonials__person {
@@ -864,6 +865,65 @@ body {
 
 .content-testimonials__marker {
   padding-right: 30px;
+}
+
+.page__our-benefits {
+  width: 100%;
+  min-height: 833px;
+  background-color: #FFFFFF;
+}
+
+.our-benefits__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 99px;
+}
+
+.our-benefits__message {
+  font-family: 'Manrope';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #5C8692;
+}
+
+.our-benefits__main-title {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.our-benefits__all-benefits {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (minmax(210px, 272px))[2];
+  -ms-grid-columns: (minmax(360px, 367px))[3];
+      grid-template: repeat(2, minmax(210px, 272px))/repeat(3, minmax(360px, 367px));
+  gap: 50px;
+}
+
+.our-benefits__pict {
+  margin-bottom: 14px;
+}
+
+.our-benefits__title {
+  font-size: 26px;
+  line-height: 140%;
+  letter-spacing: 0.312px;
+  margin-bottom: 11px;
+}
+
+.our-benefits__description {
+  line-height: 150%;
 }
 
 /*----------------------------КОД ПО АДАПТИРОВАНИЮ----------------------------*/
@@ -1010,6 +1070,12 @@ body {
     -webkit-transform: translate(-50%, 0%) rotate(-45deg);
             transform: translate(-50%, 0%) rotate(-45deg);
   }
+  .our-benefits__all-benefits {
+    -ms-grid-rows: (minmax(210px, 272px))[3];
+    -ms-grid-columns: (minmax(360px, 367px))[2];
+        grid-template: repeat(3, minmax(210px, 272px))/repeat(2, minmax(360px, 367px));
+    gap: 40px;
+  }
 }
 
 @media (max-width: 1222px) {
@@ -1063,6 +1129,30 @@ body {
   }
 }
 
+@media (max-width: 892px) {
+  .our-benefits__all-benefits {
+    -ms-grid-rows: (minmax(210px, 272px))[6];
+    -ms-grid-columns: (minmax(360px, 367px))[1];
+        grid-template: repeat(6, minmax(210px, 272px))/repeat(1, minmax(360px, 367px));
+    gap: 25px;
+  }
+  .our-benefits__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .our-benefits__item .our-benefits__description {
+    text-align: center;
+  }
+}
+
 @media (max-width: 529px) {
   .block-price__line {
     padding-bottom: 10px;
@@ -1071,3 +1161,18 @@ body {
     top: 320%;
   }
 }
+
+/*@media (max-width: 541px) {
+
+    .content-testimonials__first-block {
+        background: linear-gradient(to bottom, #FFFFFF 70%, #1E2C30 30%);
+    }
+
+    .content-testimonials__second-block {
+        background: linear-gradient(to bottom, #FFFFFF 70%, #1E2C30 30%);
+    }
+
+    /*.content-testimonials__about-person {
+        padding: 22px 0px 0px 30px;
+    
+}*/

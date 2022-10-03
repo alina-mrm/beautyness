@@ -202,8 +202,7 @@ body {
     background-color: #EBF3F5;
 }
 
-.welcome__container {
-}
+
 
 .welcome__block {
     display: flex;
@@ -307,8 +306,6 @@ body {
     background-color: #FFFFFF;
 }
 
-.services__container {
-}
 .services__block {
     display: flex;
     flex-wrap: wrap;
@@ -464,10 +461,8 @@ body {
     min-height: 1733px;
     background-color: #ffffff;
 }
-.price {
-}
-.price__container {
-}
+
+
 .price__block {
     display: flex;
     flex-direction: column;
@@ -495,8 +490,7 @@ body {
     display: grid;
     grid-template: repeat(2, 2fr) / repeat(2, 2fr);
 }
-.all-price {
-}
+
 
 .all-price__image-1 {
     order: 1;
@@ -512,8 +506,7 @@ body {
     }
 
 }
-.all-price__block-price {
-}
+
 .block-price--1 {
     order: 2;
     padding: 61px 0px 143px 60px;
@@ -527,8 +520,7 @@ body {
     position: relative;
 }
 
-.block-price__line {
-}
+
 .block-price__product {
     display: flex;
     justify-content: space-between;
@@ -637,8 +629,7 @@ body {
     background-color: #EBF3F5;
 }
 
-.testimonials__container {
-}
+
 .testimonials__block {
     display: flex;
     flex-direction: column;
@@ -657,13 +648,13 @@ body {
 .testimonials__title {
     @extend %title-fonts;
     margin-bottom: 40px;
+    text-align: center;
 }
 .testimonials__content {
     display: flex;
     gap: 20px;
 }
-.content-testimonials {
-}
+
 .content-testimonials__first-block {
     max-width: 600px;
     min-height: 311px;
@@ -683,7 +674,7 @@ body {
 .content-testimonials__about-person {
     display: flex;
     justify-content: space-between;
-    padding: 22px 0px 0px 30px;
+    padding: 22px 0px 22px 30px;
 }
 
 .content-testimonials__person {
@@ -699,8 +690,7 @@ body {
     flex-direction: column;
     justify-content: space-between
 }
-.content-testimonials__stars {
-}
+
 .content-testimonials__names {
     @extend %title-fonts;
     font-size: 20px;
@@ -719,7 +709,66 @@ body {
     padding-right: 30px;
 }
 
+.page__our-benefits {
+    width: 100%;
+    min-height: 833px;
+    background-color: #FFFFFF;
+}
+.our-benefits {
+}
+.our-benefits__container {
+}
+.our-benefits__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 99px;
+    
+}
+.our-benefits__message {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #5C8692;
+}
 
+.our-benefits__main-title {
+    @extend %title-fonts;
+    margin-bottom: 70px;
+    text-align: center;
+
+}
+
+
+.our-benefits__all-benefits {
+    display: grid;
+    grid-template: repeat(2, minmax(210px, 272px)) / repeat(3, minmax(360px, 367px));
+    gap: 50px;
+}
+.our-benefits__item {
+    
+
+}
+.our-benefits__pict {
+    margin-bottom: 14px;
+
+}
+
+.our-benefits__title {
+    @extend %title-fonts;
+    font-size: 26px;
+    line-height: 140%;
+    letter-spacing: 0.312px;
+    margin-bottom: 11px;
+}
+
+.our-benefits__description {
+    @extend %description-fonts;
+    line-height: 150%;
+}
 
 
 /*----------------------------КОД ПО АДАПТИРОВАНИЮ----------------------------*/
@@ -866,6 +915,11 @@ body {
         transform: translate(-50%, 0%) rotate(-45deg); 
     }
 
+    .our-benefits__all-benefits {
+        grid-template: repeat(3, minmax(210px, 272px)) / repeat(2, minmax(360px, 367px));
+        gap: 40px;
+    }
+
 }
 
 @media (max-width: 1222px) {
@@ -922,6 +976,25 @@ body {
     }
 }
 
+@media (max-width: 892px) {
+    .our-benefits__all-benefits {
+        grid-template: repeat(6, minmax(210px, 272px)) / repeat(1, minmax(360px, 367px));
+        gap: 25px;
+        
+    }
+
+    .our-benefits__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .our-benefits__description {
+            text-align: center;
+        }
+    }
+}
+
+
 @media (max-width: 529px) {
 
     .block-price__line {
@@ -935,3 +1008,18 @@ body {
         }
     }
 }
+
+/*@media (max-width: 541px) {
+
+    .content-testimonials__first-block {
+        background: linear-gradient(to bottom, #FFFFFF 70%, #1E2C30 30%);
+    }
+
+    .content-testimonials__second-block {
+        background: linear-gradient(to bottom, #FFFFFF 70%, #1E2C30 30%);
+    }
+
+    /*.content-testimonials__about-person {
+        padding: 22px 0px 0px 30px;
+    
+}*/
