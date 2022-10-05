@@ -771,6 +771,228 @@ body {
 }
 
 
+.page__offer {
+    width: 100%;
+    min-height: 910px;
+    background-color: #EBF3F5;
+}
+.offer {
+}
+.offer__container {
+}
+.offer__block {
+    display: flex;
+    padding-top: 110px;
+}
+.offer__discount-info {
+    margin-top: 95px;
+    max-width: 541px;
+}
+.offer__message {
+    @extend %description-fonts;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #5C8692;
+
+    margin-bottom: 3px;
+}
+.offer__title {
+    @extend %title-fonts;
+    margin-bottom: 18px;
+    max-width: 445px;
+
+}
+.offer__description {
+    @extend %description-fonts;
+    line-height: 170%;
+
+    margin-bottom: 46px;
+}
+.offer__get-flat {
+    display: flex;
+}
+.offer__contacts {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    max-width: 302px;
+    padding: 33px 32px 39px 82px;
+    border: 2px solid #5C8692;
+}
+.offer__mails {
+    margin-bottom: 15px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url(/img/dots.svg);
+        right: 110%;
+        top: calc(50% - 6px/2 - 9.67px);
+        background-repeat: no-repeat;
+        background-size: 30px 6px;
+        width: 30px;
+        height: 6px;
+    }
+    
+}
+.offer__mail-us {
+    font-size: 14px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #141414;
+}
+.offer__mailto {
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 1.2px;
+    color: #141414;
+
+    a {
+        color: #141414;
+
+        &:hover {
+            color: #5C8692;
+            box-shadow: 0 1px 0 #5C8692;
+            transition: all .7s ease-out;
+        }
+
+    }
+
+}
+.offer__phone {
+
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url(/img/dots.svg);
+        right: 110%;
+        top: calc(50% - 6px/2 - 9.67px);
+        background-repeat: no-repeat;
+        background-size: 30px 6px;
+        width: 30px;
+        height: 6px;
+    }    
+    
+}
+.offer__call-us {
+    font-size: 14px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #141414;
+}
+.offer__our-phone {
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 1.2px;
+    color: #141414;
+
+    a {
+        color: #141414;
+
+        &:hover {
+            color: #5C8692;
+            box-shadow: 0 1px 0 #5C8692;
+            transition: all .7s ease-out;
+        }
+    }
+}
+.offer__discount {
+    background-color: #1E2C30;
+    max-width: 194px;
+    padding: 22px 25px 24px 25px;
+    margin-left: -2px;
+}
+.offer__text-1 {
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.offer__percent {
+    font-size: 65px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.78px;
+    color: #FFFFFF;
+    margin-top: -6px;
+    margin-bottom: 5px;
+}
+.offer__text-2 {
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 1.8px;
+    color: #FFFFFF;
+}
+
+/*--------------------------------ФОРМА---------------------------------------*/
+
+.offer__discount-form {
+    max-width: 555px;
+    width: 100%;
+}
+.offer__form {
+    max-width: 455px;
+
+    
+}
+.main-form {
+    
+
+    input { 
+        display: block;
+        width: 100%;
+        height: 65px;
+        background: #FFFFFF;
+        border: 2px solid #5C8692;
+    }
+
+    textarea {
+        display: block;
+        width: 100%;
+        min-height: 65px;
+        max-height: 100px;
+        background: #FFFFFF;
+        border: 2px solid #5C8692;
+        resize: vertical;
+    }
+    
+}
+.main-form__item {
+    margin: 0px 0px 20px 0px;
+
+    
+}
+.main-form__label {
+    
+}
+.main-form__name {
+    
+    
+}
+.main-form__email {
+}
+.main-form__phone {
+}
+.main-form__adress {
+}
+.main-form__comment {
+}
+.button {
+}
+.form-button {
+}
+
+/*--------------------------------конец формы---------------------------------------*/
+
+
 /*----------------------------КОД ПО АДАПТИРОВАНИЮ----------------------------*/
 
 @media (max-width: 1400px) {
