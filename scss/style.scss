@@ -786,6 +786,7 @@ body {
 }
 .offer__discount-info {
     margin-top: 95px;
+    margin-right: 104px;
     max-width: 541px;
 }
 .offer__message {
@@ -939,9 +940,10 @@ body {
     width: 100%;
 }
 .offer__form {
-    max-width: 455px;
-
-    
+    max-width: 555px;
+    padding: 70px 50px 65px 50px;
+    background: #FFFFFF;
+    box-shadow: 1px 0px 18px rgba(0, 0, 0, 0.2);
 }
 .main-form {
     
@@ -951,29 +953,136 @@ body {
         width: 100%;
         height: 65px;
         background: #FFFFFF;
+        font-size: 18px;
+        padding-left: 45px;
+        padding-right: 20px;
         border: 2px solid #5C8692;
+
+        &:focus {
+            box-shadow: 1px 0px 18px rgba(0, 0, 0, 0.2);
+        }
     }
 
     textarea {
         display: block;
         width: 100%;
-        min-height: 65px;
-        max-height: 100px;
+        min-height: 130px;
         background: #FFFFFF;
         border: 2px solid #5C8692;
-        resize: vertical;
+        font-size: 18px;
+        padding-top: 10px;
+        padding-left: 45px;
+        padding-right: 20px;
+        resize: none;
+
+        &:focus {
+            box-shadow: 1px 0px 18px rgba(0, 0, 0, 0.2);
+        }
     }
     
 }
 .main-form__item {
     margin: 0px 0px 20px 0px;
-
-    
 }
+
+.item-form-name {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(/img/form/name.svg);
+        background-repeat: no-repeat;
+        background-size: 41px 47px;
+        width: 41px;
+        height: 47px;
+        
+    }
+
+}
+
+.item-form-email {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(/img/form/email.svg);
+        background-repeat: no-repeat;
+        background-size: 41px 47px;
+        width: 41px;
+        height: 47px;
+        
+    }
+
+}
+
+.item-form-phone {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(/img/form/phone.svg);
+        background-repeat: no-repeat;
+        background-size: 41px 47px;
+        width: 41px;
+        height: 47px;
+        
+    }
+
+}
+
+.item-form-adress {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(/img/form/address.svg);
+        background-repeat: no-repeat;
+        background-size: 41px 47px;
+        width: 41px;
+        height: 47px;
+        
+    }
+
+}
+
+.item-form-comment {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(/img/form/comment.svg);
+        background-repeat: no-repeat;
+        background-size: 41px 47px;
+        width: 41px;
+        height: 47px;
+        
+    }
+
+}
+
 .main-form__label {
     
 }
 .main-form__name {
+
+    
+
+    
     
     
 }
@@ -988,6 +1097,19 @@ body {
 .button {
 }
 .form-button {
+    @extend %buttons-style;
+    width: 100%; //чтобы кнопка не пряталась за экран
+    max-width: 455px;
+    min-height: 65px;
+    background-color: #5C8692;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 19px 41px 19px 58px;
+
+    &:hover {
+        background-color: #9fc3cc;
+        transition: all .7s ease;
+    }
 }
 
 /*--------------------------------конец формы---------------------------------------*/
@@ -1186,10 +1308,29 @@ body {
     }
 }
 
+@media (max-width: 1083px) {
+    .offer__block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .offer__discount-info {
+        margin-bottom: 50px;
+        margin-right: 0px;
+        
+    }
+
+    .offer__form {
+        max-width: none;
+    }
+    
+}
+
 @media (max-width:1069px) {
     .content-testimonials {
         flex-direction: column;
     }
+
+    
 }
 
 @media (max-width: 1060px) {
@@ -1229,6 +1370,21 @@ body {
             top: 320%;
         }
     }
+}
+
+@media (max-width: 518px) {
+
+    .offer__get-flat{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer__discount {
+        max-width: 295.94px;
+        padding: 22px 78.5px 24px 78.5px;
+        margin-left: 0px;
+    }
+
 }
 
 /*@media (max-width: 541px) {

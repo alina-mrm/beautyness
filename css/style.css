@@ -81,7 +81,7 @@ a:-webkit-any-link {
   text-decoration: none;
 }
 
-.button, .header-button, .welcome-button, .services-button, .block-price--button {
+.button, .header-button, .welcome-button, .services-button, .block-price--button, .form-button {
   background-color: #ffffff;
   border: 2px solid #5C8692;
   cursor: pointer;
@@ -941,6 +941,7 @@ body {
 
 .offer__discount-info {
   margin-top: 95px;
+  margin-right: 104px;
   max-width: 541px;
 }
 
@@ -1109,7 +1110,11 @@ body {
 }
 
 .offer__form {
-  max-width: 455px;
+  max-width: 555px;
+  padding: 70px 50px 65px 50px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 1px 0px 18px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 0px 18px rgba(0, 0, 0, 0.2);
 }
 
 .main-form input {
@@ -1117,21 +1122,133 @@ body {
   width: 100%;
   height: 65px;
   background: #FFFFFF;
+  font-size: 18px;
+  padding-left: 45px;
+  padding-right: 20px;
   border: 2px solid #5C8692;
+}
+
+.main-form input:focus {
+  -webkit-box-shadow: 1px 0px 18px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 0px 18px rgba(0, 0, 0, 0.2);
 }
 
 .main-form textarea {
   display: block;
   width: 100%;
-  min-height: 65px;
-  max-height: 100px;
+  min-height: 130px;
   background: #FFFFFF;
   border: 2px solid #5C8692;
-  resize: vertical;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-left: 45px;
+  padding-right: 20px;
+  resize: none;
+}
+
+.main-form textarea:focus {
+  -webkit-box-shadow: 1px 0px 18px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 0px 18px rgba(0, 0, 0, 0.2);
 }
 
 .main-form__item {
   margin: 0px 0px 20px 0px;
+}
+
+.item-form-name {
+  position: relative;
+}
+
+.item-form-name::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(/img/form/name.svg);
+  background-repeat: no-repeat;
+  background-size: 41px 47px;
+  width: 41px;
+  height: 47px;
+}
+
+.item-form-email {
+  position: relative;
+}
+
+.item-form-email::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(/img/form/email.svg);
+  background-repeat: no-repeat;
+  background-size: 41px 47px;
+  width: 41px;
+  height: 47px;
+}
+
+.item-form-phone {
+  position: relative;
+}
+
+.item-form-phone::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(/img/form/phone.svg);
+  background-repeat: no-repeat;
+  background-size: 41px 47px;
+  width: 41px;
+  height: 47px;
+}
+
+.item-form-adress {
+  position: relative;
+}
+
+.item-form-adress::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(/img/form/address.svg);
+  background-repeat: no-repeat;
+  background-size: 41px 47px;
+  width: 41px;
+  height: 47px;
+}
+
+.item-form-comment {
+  position: relative;
+}
+
+.item-form-comment::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(/img/form/comment.svg);
+  background-repeat: no-repeat;
+  background-size: 41px 47px;
+  width: 41px;
+  height: 47px;
+}
+
+.form-button {
+  width: 100%;
+  max-width: 455px;
+  min-height: 65px;
+  background-color: #5C8692;
+  font-size: 14px;
+  color: #FFFFFF;
+  padding: 19px 41px 19px 58px;
+}
+
+.form-button:hover {
+  background-color: #9fc3cc;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 /*--------------------------------конец формы---------------------------------------*/
@@ -1323,6 +1440,25 @@ body {
   }
 }
 
+@media (max-width: 1083px) {
+  .offer__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .offer__discount-info {
+    margin-bottom: 50px;
+    margin-right: 0px;
+  }
+  .offer__form {
+    max-width: none;
+  }
+}
+
 @media (max-width: 1069px) {
   .content-testimonials {
     -webkit-box-orient: vertical;
@@ -1368,6 +1504,23 @@ body {
   }
   .block-price__product ::before {
     top: 320%;
+  }
+}
+
+@media (max-width: 518px) {
+  .offer__get-flat {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .offer__discount {
+    max-width: 295.94px;
+    padding: 22px 78.5px 24px 78.5px;
+    margin-left: 0px;
   }
 }
 
