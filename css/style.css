@@ -1379,12 +1379,15 @@ body {
   color: #141414;
   margin-bottom: 14px;
   margin-left: 26px;
+  padding-right: 15px;
 }
 
 .updates_text {
   line-height: 150%;
   letter-spacing: 0.36px;
-  margin-left: 26px;
+  padding-left: 26px;
+  padding-bottom: 15px;
+  padding-right: 15px;
 }
 
 .updates-button {
