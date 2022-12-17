@@ -1252,6 +1252,9 @@ body {
 .footer__smm {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 75px;
+    margin-bottom: 45px;
 }
 .smm-footer {
 }
@@ -1264,13 +1267,16 @@ body {
 }
 
 .footer__line {
-    width: 83%;
+    width: 100%;
     height: 1px;
     background: rgba(255, 255, 255, 0.15);
+    margin-bottom: 60px;
     
 }
 .smm-footer__icon {
-    
+    &:not(:last-child){
+        margin-right: 7px;
+    }
 }
 .smm-footer_icon-facebook {
 }
@@ -1286,74 +1292,188 @@ body {
 
 .footer__navigation {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 122px;
 }
 .navigation-footer {
 }
 .navigation-footer__explore-column {
+    margin-right: 141px;
 }
 .column-explore {
 }
 .column-explore__title {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    letter-spacing: 0.352px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
 }
 .column-explore__block {
 }
 .column-explore__list {
 }
 .column-explore__item {
+    &:not(:last-child){
+        margin-bottom: 9px;;
+    }
+    
 }
 .column-explore__link {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 170%;
+    letter-spacing: 0.17px;
+    color: #FFFFFF;
 }
 .navigation-footer__utility-column {
+    margin-right: 154px;
 }
 .column-utility {
 }
 .column-utility__title {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    letter-spacing: 0.352px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
 }
 .column-utility__block {
 }
 .column-utility__list {
 }
 .column-utility__item {
+    &:not(:last-child){
+        margin-bottom: 9px;;
+    }
 }
 .column-utility__link {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 170%;
+    letter-spacing: 0.17px;
+    color: #FFFFFF;
 }
 .navigation-footer__keep-column {
+    margin-right: 141px;
 }
 .column-keep {
 }
 .column-keep__title {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    letter-spacing: 0.352px;
+    color: #FFFFFF;
+    margin-bottom: 27px;
 }
 .column-keep__block {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 170%;
+    letter-spacing: 0.17px;
+    color: #FFFFFF;
 }
 .column-keep__address {
+    display: flex;
+    margin-bottom: 27px;
 }
 .column-keep__subtitle {
+    margin-right: 30px;
 }
 .column-keep__description {
 }
 .column-keep__description-2 {
 }
 .column-keep__mail {
+    display: flex;
+    margin-bottom: 28px;
 }
-.column-keep__mailto {
+
+.column-keep__subtitle-mail {
+    margin-right: 65px;
+}
+
+.column-keep__mailto a {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 170%;
+    letter-spacing: 0.17px;
+    color: #FFFFFF;
 }
 .column-keep__phone {
+    display: flex;
 }
-.column-keep__number-phone {
+
+.column-keep__subtitle-phone{
+    margin-right: 46px;
+}
+
+.column-keep__number-phone a {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 170%;
+    letter-spacing: 0.17px;
+    color: #FFFFFF;
 }
 .navigation-footer__workingh-column {
 }
 .column-workingh {
 }
+
+.column-workingh__title {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    letter-spacing: 0.352px;
+    color: #FFFFFF;
+    margin-bottom: 27px;
+}
+.column-workingh__list {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 170%;
+    letter-spacing: 0.17px;
+    color: #FFFFFF;
+}
+.column-workingh__item {
+    &:not(:last-child){
+        margin-bottom: 9px;;
+    }
+}
 .column-keep__list {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 170%;
+    letter-spacing: 0.17px;
+    color: #FFFFFF;
 }
 .column-keep__item {
 }
 .footer__rights {
     min-height: 62px;
     background-color: #111E22;
-    flex-wrap: nowrap;
+    padding: 19px 0px;
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: #FFFFFF;
 }
 
 /*----------------------------КОД ПО АДАПТИРОВАНИЮ----------------------------*/
