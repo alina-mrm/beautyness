@@ -233,9 +233,7 @@ body {
     background-size: 22px 21px;
     width: 22px;
     height: 21px;
-
 }
-    
 
 .welcome__title {
     @extend %title-fonts;
@@ -714,10 +712,7 @@ body {
     min-height: 833px;
     background-color: #FFFFFF;
 }
-.our-benefits {
-}
-.our-benefits__container {
-}
+
 .our-benefits__block {
     display: flex;
     flex-direction: column;
@@ -748,10 +743,7 @@ body {
     grid-template: repeat(2, minmax(210px, 272px)) / repeat(3, minmax(360px, 367px));
     gap: 50px;
 }
-.our-benefits__item {
-    
 
-}
 .our-benefits__pict {
     margin-bottom: 14px;
 
@@ -776,10 +768,8 @@ body {
     min-height: 910px;
     background-color: #EBF3F5;
 }
-.offer {
-}
-.offer__container {
-}
+
+
 .offer__block {
     display: flex;
     padding-top: 110px;
@@ -796,24 +786,25 @@ body {
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: #5C8692;
-
     margin-bottom: 3px;
 }
+
 .offer__title {
     @extend %title-fonts;
     margin-bottom: 18px;
     max-width: 445px;
-
 }
+
 .offer__description {
     @extend %description-fonts;
     line-height: 170%;
-
     margin-bottom: 46px;
 }
+
 .offer__get-flat {
     display: flex;
 }
+
 .offer__contacts {
     display: flex;
     flex-direction: column;
@@ -839,12 +830,14 @@ body {
     }
     
 }
+
 .offer__mail-us {
     font-size: 14px;
     line-height: 150%;
     text-transform: uppercase;
     color: #141414;
 }
+
 .offer__mailto {
     font-size: 15px;
     line-height: 150%;
@@ -859,14 +852,11 @@ body {
             box-shadow: 0 1px 0 #5C8692;
             transition: all .7s ease-out;
         }
-
     }
-
 }
+
 .offer__phone {
-
     position: relative;
-
     &::before {
         content: "";
         position: absolute;
@@ -878,23 +868,22 @@ body {
         width: 30px;
         height: 6px;
     }    
-    
 }
+
 .offer__call-us {
     font-size: 14px;
     line-height: 150%;
     text-transform: uppercase;
     color: #141414;
 }
+
 .offer__our-phone {
     font-size: 15px;
     line-height: 150%;
     letter-spacing: 1.2px;
     color: #141414;
-
     a {
         color: #141414;
-
         &:hover {
             color: #5C8692;
             box-shadow: 0 1px 0 #5C8692;
@@ -902,12 +891,14 @@ body {
         }
     }
 }
+
 .offer__discount {
     background-color: #1E2C30;
     max-width: 194px;
     padding: 22px 25px 24px 25px;
     margin-left: -2px;
 }
+
 .offer__text-1 {
     font-size: 15px;
     line-height: 150%;
@@ -916,6 +907,7 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
 .offer__percent {
     font-size: 65px;
     line-height: 120%;
@@ -925,6 +917,7 @@ body {
     margin-top: -6px;
     margin-bottom: 5px;
 }
+
 .offer__text-2 {
     font-size: 18px;
     line-height: 150%;
@@ -938,7 +931,9 @@ body {
 .offer__discount-form {
     max-width: 555px;
     width: 100%;
+    margin-bottom: 100px;
 }
+
 .offer__form {
     max-width: 555px;
     padding: 70px 50px 65px 50px;
@@ -946,8 +941,6 @@ body {
     box-shadow: 1px 0px 18px rgba(0, 0, 0, 0.2);
 }
 .main-form {
-    
-
     input { 
         display: block;
         width: 100%;
@@ -981,6 +974,7 @@ body {
     }
     
 }
+
 .main-form__item {
     margin: 0px 0px 20px 0px;
 }
@@ -998,9 +992,7 @@ body {
         background-size: 41px 47px;
         width: 41px;
         height: 47px;
-        
     }
-
 }
 
 .item-form-email {
@@ -1016,9 +1008,7 @@ body {
         background-size: 41px 47px;
         width: 41px;
         height: 47px;
-        
     }
-
 }
 
 .item-form-phone {
@@ -1034,9 +1024,7 @@ body {
         background-size: 41px 47px;
         width: 41px;
         height: 47px;
-        
     }
-
 }
 
 .item-form-adress {
@@ -1052,9 +1040,7 @@ body {
         background-size: 41px 47px;
         width: 41px;
         height: 47px;
-        
     }
-
 }
 
 .item-form-comment {
@@ -1070,9 +1056,7 @@ body {
         background-size: 41px 47px;
         width: 41px;
         height: 47px;
-        
     }
-
 }
 
 .form-button {
@@ -1098,10 +1082,7 @@ body {
     min-height: 1029px;
     background-color: #FFFFFF;
 }
-.updates {
-}
-.updates__container {
-}
+
 .updates__block {
     display: flex;
     flex-direction: column;
@@ -1117,25 +1098,26 @@ body {
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: #5C8692;
-
     margin-bottom: 3px;
 }
+
 .updates__main-title {
     @extend %title-fonts;
     margin-bottom: 66px;
-
 }
+
 .updates__cards {
     display: flex;
-    gap: 20px;
+    gap: 19px;
     margin-bottom: 12px;
-
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 .updates__card {
     min-height: 597px;
     max-width: 387px;
     background-color: #EBF3F5;
-    
     
     img {
         width: 100%;
@@ -1143,22 +1125,19 @@ body {
         object-fit: cover;
     }
 }
+
 .updates__image {
     position: relative;
     max-width: 387px;
     max-height: 342px;
 }
 
-
-
-.updates__info {
-}
 .info-card {
     display: flex;
     margin-top: 29px;
     margin-bottom: 15px;
-    
 }
+
 .info-card__date {
     position: relative;
     font-family: 'Manrope';
@@ -1170,8 +1149,8 @@ body {
     color: #5C8692;
     margin-left: 26px;
     margin-right: 70px;
-
 }
+
 .info-card__name {
     position: relative;
     font-family: 'Manrope';
@@ -1193,12 +1172,14 @@ body {
         top: 7.49px;
     }
 }
+
 .info-card__element {
     width: 30px;
     background-color: transparent;
     transform: rotate(180deg);
     border: 2px solid #141414;
 }
+
 .updates__title {
     font-family: 'Playfair Display';
     font-weight: 400;
@@ -1210,30 +1191,24 @@ body {
     margin-left: 26px;
     padding-right: 15px;
 }
+
 .updates_text {
     @extend %description-fonts;
     line-height: 150%;
     letter-spacing: 0.36px;
-    padding-left: 26px;
-    padding-bottom: 15px;
-    padding-right: 15px;
+    margin: 0px 15px 15px 26px;
 }
-.button {
-}
+
 .updates-button {
     @extend %buttons-style;
     padding: 18px 32px 19px 32px;
-    
+    margin-bottom: 110px;
     &:hover {
         background-color: #5C8692;
         color: #FFFFFF;
         transition: all .7s ease;
     }
 }
-
-
-    
-
 
 
 /*--------------------------------конец формы---------------------------------------*/
@@ -1245,25 +1220,13 @@ body {
     display: flex;
     flex-direction: column;
 }
-.footer__container {
-}
-.footer__body {
-}
+
 .footer__smm {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 75px;
     margin-bottom: 45px;
-}
-.smm-footer {
-}
-.smm-footer__logo {
-}
-.smm-footer_image {
-}
-.smm-footer__smm-icons {
-    
 }
 
 .footer__line {
@@ -1273,21 +1236,18 @@ body {
     margin-bottom: 60px;
     
 }
+
 .smm-footer__icon {
+    
     &:not(:last-child){
         margin-right: 7px;
     }
-}
-.smm-footer_icon-facebook {
-}
-
-.smm-footer_icon-twitter {
-}
-
-.smm-footer_icon-linkedin {
-}
-
-.smm-footer_icon-instagram {
+    img {
+        &:hover {
+            transform: scale(1.1);
+            transition: all .7 ease;
+        }
+    }
 }
 
 .footer__navigation {
@@ -1295,13 +1255,11 @@ body {
     flex-wrap: wrap;
     margin-bottom: 122px;
 }
-.navigation-footer {
-}
+
 .navigation-footer__explore-column {
     margin-right: 141px;
 }
-.column-explore {
-}
+
 .column-explore__title {
     font-family: 'Playfair Display';
     font-weight: 400;
@@ -1311,16 +1269,13 @@ body {
     color: #FFFFFF;
     margin-bottom: 24px;
 }
-.column-explore__block {
-}
-.column-explore__list {
-}
+
 .column-explore__item {
     &:not(:last-child){
         margin-bottom: 9px;;
     }
-    
 }
+
 .column-explore__link {
     font-family: 'Manrope';
     font-weight: 400;
@@ -1328,12 +1283,16 @@ body {
     line-height: 170%;
     letter-spacing: 0.17px;
     color: #FFFFFF;
+    &:hover {
+        color: #66a5cf;
+        transition: all .7s ease-out;
+    }
 }
+
 .navigation-footer__utility-column {
     margin-right: 154px;
 }
-.column-utility {
-}
+
 .column-utility__title {
     font-family: 'Playfair Display';
     font-weight: 400;
@@ -1343,15 +1302,13 @@ body {
     color: #FFFFFF;
     margin-bottom: 24px;
 }
-.column-utility__block {
-}
-.column-utility__list {
-}
+
 .column-utility__item {
     &:not(:last-child){
         margin-bottom: 9px;;
     }
 }
+
 .column-utility__link {
     font-family: 'Manrope';
     font-weight: 400;
@@ -1359,12 +1316,16 @@ body {
     line-height: 170%;
     letter-spacing: 0.17px;
     color: #FFFFFF;
+    &:hover {
+        color: #66a5cf;
+        transition: all .7s ease-out;
+    }
 }
+
 .navigation-footer__keep-column {
     margin-right: 141px;
 }
-.column-keep {
-}
+
 .column-keep__title {
     font-family: 'Playfair Display';
     font-weight: 400;
@@ -1374,6 +1335,7 @@ body {
     color: #FFFFFF;
     margin-bottom: 27px;
 }
+
 .column-keep__block {
     font-family: 'Manrope';
     font-weight: 400;
@@ -1382,17 +1344,16 @@ body {
     letter-spacing: 0.17px;
     color: #FFFFFF;
 }
+
 .column-keep__address {
     display: flex;
     margin-bottom: 27px;
 }
+
 .column-keep__subtitle {
     margin-right: 30px;
 }
-.column-keep__description {
-}
-.column-keep__description-2 {
-}
+
 .column-keep__mail {
     display: flex;
     margin-bottom: 28px;
@@ -1400,6 +1361,14 @@ body {
 
 .column-keep__subtitle-mail {
     margin-right: 65px;
+}
+
+.column-keep__mailto {
+    &:hover {
+        color: #5C8692;
+        box-shadow: 0 1px 0 #5C8692;
+        transition: all .7s ease-out;
+    }
 }
 
 .column-keep__mailto a {
@@ -1410,12 +1379,21 @@ body {
     letter-spacing: 0.17px;
     color: #FFFFFF;
 }
+
 .column-keep__phone {
     display: flex;
 }
 
 .column-keep__subtitle-phone{
     margin-right: 46px;
+}
+
+.column-keep__number-phone {
+    &:hover {
+        color: #5C8692;
+        box-shadow: 0 1px 0 #5C8692;
+        transition: all .7s ease-out;
+    }
 }
 
 .column-keep__number-phone a {
@@ -1425,10 +1403,6 @@ body {
     line-height: 170%;
     letter-spacing: 0.17px;
     color: #FFFFFF;
-}
-.navigation-footer__workingh-column {
-}
-.column-workingh {
 }
 
 .column-workingh__title {
@@ -1440,6 +1414,7 @@ body {
     color: #FFFFFF;
     margin-bottom: 27px;
 }
+
 .column-workingh__list {
     font-family: 'Manrope';
     font-weight: 400;
@@ -1448,11 +1423,13 @@ body {
     letter-spacing: 0.17px;
     color: #FFFFFF;
 }
+
 .column-workingh__item {
     &:not(:last-child){
         margin-bottom: 9px;;
     }
 }
+
 .column-keep__list {
     font-family: 'Manrope';
     font-weight: 400;
@@ -1461,8 +1438,7 @@ body {
     letter-spacing: 0.17px;
     color: #FFFFFF;
 }
-.column-keep__item {
-}
+
 .footer__rights {
     min-height: 62px;
     background-color: #111E22;

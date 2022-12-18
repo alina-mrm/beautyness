@@ -1113,6 +1113,7 @@ body {
 .offer__discount-form {
   max-width: 555px;
   width: 100%;
+  margin-bottom: 100px;
 }
 
 .offer__form {
@@ -1295,8 +1296,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 19px;
   margin-bottom: 12px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .updates__card {
@@ -1385,13 +1391,12 @@ body {
 .updates_text {
   line-height: 150%;
   letter-spacing: 0.36px;
-  padding-left: 26px;
-  padding-bottom: 15px;
-  padding-right: 15px;
+  margin: 0px 15px 15px 26px;
 }
 
 .updates-button {
   padding: 18px 32px 19px 32px;
+  margin-bottom: 110px;
 }
 
 .updates-button:hover {
@@ -1440,6 +1445,13 @@ body {
   margin-right: 7px;
 }
 
+.smm-footer__icon img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all .7 ease;
+  transition: all .7 ease;
+}
+
 .footer__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1476,6 +1488,12 @@ body {
   color: #FFFFFF;
 }
 
+.column-explore__link:hover {
+  color: #66a5cf;
+  -webkit-transition: all .7s ease-out;
+  transition: all .7s ease-out;
+}
+
 .navigation-footer__utility-column {
   margin-right: 154px;
 }
@@ -1501,6 +1519,12 @@ body {
   line-height: 170%;
   letter-spacing: 0.17px;
   color: #FFFFFF;
+}
+
+.column-utility__link:hover {
+  color: #66a5cf;
+  -webkit-transition: all .7s ease-out;
+  transition: all .7s ease-out;
 }
 
 .navigation-footer__keep-column {
@@ -1548,6 +1572,14 @@ body {
   margin-right: 65px;
 }
 
+.column-keep__mailto:hover {
+  color: #5C8692;
+  -webkit-box-shadow: 0 1px 0 #5C8692;
+          box-shadow: 0 1px 0 #5C8692;
+  -webkit-transition: all .7s ease-out;
+  transition: all .7s ease-out;
+}
+
 .column-keep__mailto a {
   font-family: 'Manrope';
   font-weight: 400;
@@ -1565,6 +1597,14 @@ body {
 
 .column-keep__subtitle-phone {
   margin-right: 46px;
+}
+
+.column-keep__number-phone:hover {
+  color: #5C8692;
+  -webkit-box-shadow: 0 1px 0 #5C8692;
+          box-shadow: 0 1px 0 #5C8692;
+  -webkit-transition: all .7s ease-out;
+  transition: all .7s ease-out;
 }
 
 .column-keep__number-phone a {
