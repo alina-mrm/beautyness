@@ -369,6 +369,7 @@ body {
 .take-care__block {
     display: flex;
     padding-top: 140px;
+    padding-bottom: 30px;
 }
 .take-care__content {
     max-width: 593px;
@@ -633,6 +634,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 99px;
+    padding-bottom: 30px;
     
 }
 .testimonials__message {
@@ -1612,6 +1614,12 @@ body {
     }
 }
 
+@media (max-width: 1210px) {
+    .footer__navigation > div {
+        margin-right: 30px;
+    }
+}
+
 @media (max-width: 1150px) {
 
     .all-price__image-1 {
@@ -1645,6 +1653,7 @@ body {
     }
 }
 
+
 @media (max-width: 1083px) {
     .offer__block {
         flex-direction: column;
@@ -1676,6 +1685,17 @@ body {
     }
 }
 
+@media (max-width: 895px) {
+    .footer__navigation {
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    & > div {
+        margin-right: 0px;
+    }
+}
+
 @media (max-width: 892px) {
     .our-benefits__all-benefits {
         grid-template: repeat(6, minmax(210px, 272px)) / repeat(1, minmax(360px, 367px));
@@ -1694,6 +1714,20 @@ body {
     }
 }
 
+@media (max-width: 613px) {
+    .footer__navigation {
+        flex-direction: column;
+        margin-left: 30px;
+    }
+    .footer__smm {
+        flex-direction: column;
+
+        & > a {
+            margin-bottom: 30px;
+        }
+        
+    }
+}
 
 @media (max-width: 529px) {
 
@@ -1724,17 +1758,13 @@ body {
 
 }
 
-/*@media (max-width: 541px) {
-
+@media (max-width: 467px) {
     .content-testimonials__first-block {
-        background: linear-gradient(to bottom, #FFFFFF 70%, #1E2C30 30%);
+        background: linear-gradient(to bottom, #FFFFFF 66%, #1E2C30 34%);
     }
-
     .content-testimonials__second-block {
-        background: linear-gradient(to bottom, #FFFFFF 70%, #1E2C30 30%);
-    }
 
-    /*.content-testimonials__about-person {
-        padding: 22px 0px 0px 30px;
-    
-}*/
+        background: linear-gradient(to bottom, #FFFFFF 66%, #1E2C30 34%);
+    }
+}
+
